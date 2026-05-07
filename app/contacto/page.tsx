@@ -100,7 +100,7 @@ export default function ContactoPage() {
               <div>
                 <p className="text-sm text-slate-400">Email</p>
                 <p className="mt-1 text-lg font-medium">
-                  hello@valenciahome.com
+                  info@topzero.es
                 </p>
               </div>
 
