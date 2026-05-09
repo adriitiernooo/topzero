@@ -1,127 +1,138 @@
 "use client";
 
-import { useState } from "react";
-import NeighborhoodCard from "@/components/NeighborhoodCard";
 import Link from "next/link";
 
 export default function Home() {
-  const [started, setStarted] = useState(false);
-
   return (
-    <main className="min-h-screen bg-gradient-to-br from-sky-50 via-white to-blue-100 px-6">
-      <header className="mx-auto flex max-w-6xl items-center justify-between py-6">
-        <div className="font-bold text-slate-950 text-2xl">
-          Top<span className="text-sky-500">Zero</span>
-        </div>
+    <main className="min-h-screen bg-[#f6f3ee]">
+      <header className="fixed left-0 top-0 z-50 w-full border-b border-white/10 bg-black/30 px-6 backdrop-blur-xl">
+        <div className="mx-auto flex h-20 max-w-7xl items-center justify-between">
+          <Link href="/" className="flex items-center">
+           <img
+              src="/images/logo-topzero1.png"
+              alt="TopZero"
+              className="h-35 w-auto object-contain"
+              />
+          </Link>
 
-        <nav 
-        className="hidden items-center gap-8 text-sm font-medium text-slate-600 md:flex">
-          <Link href="/como-funciona">
-          Cómo funciona
-          </Link>
-          <Link href="/barrios">
-            Barrios
-          </Link>
-          <Link href="/contacto">
-            Contacto
-          </Link>
-        </nav>
+          <nav className="hidden items-center gap-8 text-sm font-medium text-white/80 md:flex">
+            <Link href="/como-funciona" className="transition hover:text-white">
+              Cómo funciona
+            </Link>
+
+            <Link href="/barrios" className="transition hover:text-white">
+              Distritos
+            </Link>
+
+            <Link href="/contacto" className="transition hover:text-white">
+              Contacto
+            </Link>
+          </nav>
+        </div>
       </header>
 
-      <section className="mx-auto flex min-h-[calc(100vh-96px)] max-w-4xl items-center justify-center text-center">
-        {!started ? (
-          <div>
-            <div className="mb-6 inline-flex rounded-full border border-sky-200 bg-white/70 px-4 py-2 text-sm font-medium text-sky-700 shadow-sm">
-              Valencia Home Match
-            </div>
+      <section className="relative h-screen overflow-hidden pt-20">
+        <img
+          src="/images/valencia-hero.jpg"
+          alt="Valencia"
+          className="absolute inset-0 h-full w-full object-cover"
+        />
 
-            <h1 className="text-5xl font-bold tracking-tight text-slate-950 md:text-7xl">
-              Encuentra tu zona ideal para vivir en Valencia
+        <div className="absolute inset-0 bg-[#071827]/65" />
+
+        <div className="relative z-10 mx-auto flex h-full max-w-7xl items-center px-6">
+          <div className="max-w-4xl">
+            <p className="mb-5 text-sm font-semibold uppercase tracking-[0.35em] text-[#9dd8ff]">
+              Urban Intelligence for Valencia
+            </p>
+
+            <h1 className="text-5xl font-black leading-tight tracking-tight text-white md:text-7xl">
+              Encuentra la zona de Valencia que encaja contigo
             </h1>
 
-            <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-slate-600">
-              Responde unas preguntas sobre tu estilo de vida y te
-              recomendaremos los barrios que mejor encajan contigo.
+            <p className="mt-6 max-w-2xl text-lg leading-8 text-white/80 md:text-xl">
+              Analizamos tu estilo de vida, movilidad y preferencias urbanas
+              para recomendarte los distritos que mejor se adaptan a ti.
             </p>
 
-            <div className="mt-10 flex justify-center">
-              <Link
-                href="/quiz"
-                className="inline-flex items-center justify-center rounded-2xl bg-sky-500 px-8 py-4 font-semibold text-white shadow-xl shadow-sky-200 transition hover:-translate-y-1 hover:bg-sky-600"
-                >
-                Empezar recomendación
-              </Link>
-            </div>
-
-            <div className="mx-auto mt-14 max-w-2xl rounded-3xl border border-white/80 bg-white/70 p-6 text-left shadow-2xl shadow-sky-100 backdrop-blur">
-              <p className="text-sm font-medium text-sky-700">Vista previa</p>
-
-              <h2 className="mt-3 text-2xl font-bold text-slate-900">
-                Tu barrio recomendado podría ser...
-              </h2>
-
-              <div className="mt-6 grid gap-4 md:grid-cols-3">
-                <NeighborhoodCard
-                  title="Benimaclet"
-                  description="Joven, conectado y con vida local."
-                  color="bg-sky-50"
-                />
-
-                <NeighborhoodCard
-                  title="Ruzafa"
-                  description="Creativo, céntrico y con mucho ocio."
-                  color="bg-blue-50"
-                />
-
-                <NeighborhoodCard
-                  title="Patacona"
-                  description="Playa, calma y estilo mediterráneo."
-                  color="bg-blue-50"
-                />
-              </div>
-            </div>
-          </div>
-        ) : (
-          <div className="w-full max-w-3xl">
-            <p className="text-sm font-medium text-sky-600">
-              Pregunta 1 de 10
-            </p>
-
-            <h2 className="mt-4 text-4xl font-bold text-slate-900 md:text-5xl">
-              ¿Qué estilo de vida buscas?
-            </h2>
-
-            <p className="mx-auto mt-4 max-w-xl text-slate-600">
-              Elige la opción que más se parece a lo que tienes en mente.
-            </p>
-
-            <div className="mt-10 grid gap-4 md:grid-cols-2">
-              <button className="rounded-2xl bg-white p-6 text-left text-lg font-medium text-slate-800 shadow-lg transition hover:-translate-y-1 hover:shadow-xl">
-                 Cerca de la playa
-              </button>
-
-              <button className="rounded-2xl bg-white p-6 text-left text-lg font-medium text-slate-800 shadow-lg transition hover:-translate-y-1 hover:shadow-xl">
-                 Vida urbana y ocio
-              </button>
-
-              <button className="rounded-2xl bg-white p-6 text-left text-lg font-medium text-slate-800 shadow-lg transition hover:-translate-y-1 hover:shadow-xl">
-                 Tranquilidad
-              </button>
-
-              <button className="rounded-2xl bg-white p-6 text-left text-lg font-medium text-slate-800 shadow-lg transition hover:-translate-y-1 hover:shadow-xl">
-                 Ambiente joven
-              </button>
-            </div>
-
-            <button
-              onClick={() => setStarted(false)}
-              className="mt-8 text-sm font-medium text-slate-500 transition hover:text-sky-600"
+            <Link
+              href="/quiz"
+              className="mt-10 inline-flex rounded-full bg-white px-8 py-4 text-lg font-bold text-[#071827] shadow-2xl transition hover:-translate-y-1 hover:bg-[#e8f6ff]"
             >
-              Volver al inicio
-            </button>
+              Empezar recomendación
+            </Link>
           </div>
-        )}
+        </div>
       </section>
+      <section className="bg-[#f6f3ee] px-6 py-28">
+  <div className="mx-auto max-w-7xl space-y-28">
+    <EditorialBlock
+      image="/images/foto-catedral.jpg"
+      label="Valencia real"
+      title="Cada zona tiene una forma distinta de vivir."
+      text="Valencia no es una sola ciudad. Cambia según el distrito, el ritmo, la conexión, la vida de barrio y lo que cada persona necesita para sentirse en casa."
+    />
+
+    <EditorialBlock
+      reverse
+      image="/images/foto-centro.jpg"
+      label="Inteligencia urbana"
+      title="No buscamos pisos. Buscamos encaje."
+      text="TopZero cruza tus preferencias con perfiles urbanos reales para recomendarte zonas que tengan sentido para tu forma de vivir, moverte y disfrutar la ciudad."
+    />
+
+    <EditorialBlock
+      image="/images/foto-terraza.jpg"
+      label="Lifestyle matching"
+      title="Vivir bien empieza por entender cómo quieres vivir."
+      text="Una terraza, una calle tranquila, una conexión rápida o un barrio con vida pueden cambiar por completo tu experiencia diaria. Por eso empezamos por ti."
+    />
+  </div>
+</section>
+     
     </main>
+  );
+}
+function EditorialBlock({
+  image,
+  label,
+  title,
+  text,
+  reverse = false,
+}: {
+  image: string;
+  label: string;
+  title: string;
+  text: string;
+  reverse?: boolean;
+}) {
+  return (
+    <div
+      className={`grid items-center gap-12 lg:grid-cols-2 ${
+        reverse ? "lg:[&>div:first-child]:order-2" : ""
+      }`}
+    >
+      <div className="overflow-hidden rounded-[36px] shadow-2xl shadow-slate-300/40">
+        <img
+          src={image}
+          alt={title}
+          className="h-[560px] w-full object-cover transition duration-700 hover:scale-105"
+        />
+      </div>
+
+      <div className="max-w-xl">
+        <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[#0f5f8f]">
+          {label}
+        </p>
+
+        <h2 className="mt-4 text-4xl font-bold leading-tight tracking-tight text-[#071827] md:text-5xl">
+          {title}
+        </h2>
+
+        <p className="mt-6 text-lg leading-8 text-slate-600">
+          {text}
+        </p>
+      </div>
+    </div>
   );
 }

@@ -75,23 +75,6 @@ export default function ComoFuncionaPage() {
             </div>
           ))}
         </div>
-
-        <div className="mt-16 rounded-3xl border border-white/80 bg-slate-950 p-8 text-white shadow-2xl">
-          <p className="text-sm font-medium uppercase tracking-[0.3em] text-sky-300">
-            Próximamente
-          </p>
-
-          <h2 className="mt-4 text-3xl font-bold">
-            Árbol de decisión personalizado
-          </h2>
-
-          <p className="mt-4 max-w-3xl leading-8 text-slate-300">
-            Cuando el árbol de decisión esté definido, conectaremos cada
-            respuesta con una lógica más precisa para recomendar zonas según
-            presupuesto, movilidad, cercanía al mar, tranquilidad, servicios y
-            estilo de vida.
-          </p>
-        </div>
       </div>
     </main>
   );
