@@ -45,12 +45,12 @@ export default function Home() {
             </p>
 
             <div className="mt-10 flex justify-center">
-              <button
-                onClick={() => setStarted(true)}
-                className="rounded-2xl bg-sky-500 px-8 py-4 text-lg font-semibold text-white shadow-xl shadow-sky-200 transition hover:-translate-y-1 hover:bg-sky-600"
-              >
+              <Link
+                href="/quiz"
+                className="inline-flex items-center justify-center rounded-2xl bg-sky-500 px-8 py-4 font-semibold text-white shadow-xl shadow-sky-200 transition hover:-translate-y-1 hover:bg-sky-600"
+                >
                 Empezar recomendación
-              </button>
+              </Link>
             </div>
 
             <div className="mx-auto mt-14 max-w-2xl rounded-3xl border border-white/80 bg-white/70 p-6 text-left shadow-2xl shadow-sky-100 backdrop-blur">
