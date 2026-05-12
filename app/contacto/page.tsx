@@ -38,16 +38,16 @@ export default function ContactoPage() {
           </div>
 
           <div className="overflow-hidden rounded-[36px] border border-[#d8d2c8] bg-[#fffaf2] shadow-2xl shadow-[#b9a98d]/20">
-            <div className="border-b border-[#d8d2c8] px-8 py-8 md:px-10">
-              <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[#315b74]">
+            <div className="border-b border-[#071827]/20 bg-[#071827] px-8 py-8 text-[#fffaf2] md:px-10">
+              <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[#c7dceb]">
                 Formulario
               </p>
 
-              <h2 className="mt-5 text-4xl font-black leading-tight tracking-tight text-[#071827]">
+              <h2 className="mt-5 text-4xl font-black leading-tight tracking-tight">
                 Cuéntanos tu caso.
               </h2>
 
-              <p className="mt-5 max-w-2xl text-lg leading-8 text-[#5f6773]">
+              <p className="mt-5 max-w-2xl text-lg leading-8 text-[#e7edf2]/80">
                 Puedes escribirnos directamente mediante el formulario integrado.
               </p>
             </div>
