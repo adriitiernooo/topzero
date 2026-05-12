@@ -2,125 +2,65 @@ import Link from "next/link";
 
 export default function ContactoPage() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-sky-50 via-white to-blue-100 px-6 py-16">
-      <div className="mb-10">
+    <main className="min-h-screen bg-[#f3efe7] px-6 py-10 text-[#071827]">
+      <div className="mx-auto max-w-6xl">
         <Link
           href="/"
-          className="text-sm font-medium text-slate-500 transition hover:text-sky-600"
+          className="text-sm font-medium text-[#5f6773] transition hover:text-[#071827]"
         >
           ← Volver al inicio
         </Link>
-      </div>
 
-      <div className="mx-auto max-w-5xl">
-        <div className="text-center">
-          <p className="text-sm font-medium uppercase tracking-[0.3em] text-sky-600">
-            Contacto
-          </p>
+        <section className="mt-24 grid gap-14 md:grid-cols-[0.9fr_1.1fr]">
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-[0.35em] text-[#315b74]">
+              Contacto
+            </p>
 
-          <h1 className="mt-4 text-5xl font-bold tracking-tight text-slate-950 md:text-6xl">
-            Hablemos
-          </h1>
+            <h1 className="mt-8 text-5xl font-black leading-[1] tracking-tight md:text-7xl">
+              Hablemos de cómo quieres vivir Valencia.
+            </h1>
 
-          <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-slate-600">
-            Estamos construyendo una nueva forma de descubrir dónde vivir en
-            Valencia. Si quieres colaborar, preguntar algo o simplemente seguir
-            el proyecto, puedes escribirnos.
-          </p>
-        </div>
+            <p className="mt-8 text-xl leading-9 text-[#5f6773]">
+              Escríbenos si tienes dudas, propuestas o quieres saber más sobre
+              TopZero.
+            </p>
 
-        <div className="mt-16 grid gap-8 lg:grid-cols-2">
-          <div className="rounded-3xl border border-white/80 bg-white/70 p-8 shadow-2xl shadow-sky-100 backdrop-blur">
-            <h2 className="text-2xl font-bold text-slate-900">
-              Envíanos un mensaje
-            </h2>
+            <div className="mt-14 border-t border-[#d8d2c8] pt-8">
+              <p className="text-sm uppercase tracking-[0.25em] text-[#315b74]">
+                Email directo
+              </p>
 
-            <div className="mt-8 space-y-5">
-              <div>
-                <label className="mb-2 block text-sm font-medium text-slate-700">
-                  Nombre
-                </label>
-
-                <input
-                  type="text"
-                  placeholder="Tu nombre"
-                  className="w-full rounded-2xl border border-slate-200 bg-white px-5 py-4 outline-none transition focus:border-sky-400"
-                />
-              </div>
-
-              <div>
-                <label className="mb-2 block text-sm font-medium text-slate-700">
-                  Email
-                </label>
-
-                <input
-                  type="email"
-                  placeholder="tu@email.com"
-                  className="w-full rounded-2xl border border-slate-200 bg-white px-5 py-4 outline-none transition focus:border-sky-400"
-                />
-              </div>
-
-              <div>
-                <label className="mb-2 block text-sm font-medium text-slate-700">
-                  Mensaje
-                </label>
-
-                <textarea
-                  placeholder="Escribe tu mensaje..."
-                  rows={6}
-                  className="w-full rounded-2xl border border-slate-200 bg-white px-5 py-4 outline-none transition focus:border-sky-400"
-                />
-              </div>
-
-              <button className="rounded-2xl bg-sky-500 px-8 py-4 font-semibold text-white shadow-xl shadow-sky-200 transition hover:-translate-y-1 hover:bg-sky-600">
-                Enviar mensaje
-              </button>
+              <p className="mt-3 text-2xl font-bold text-[#071827]">
+                info@topzero.es
+              </p>
             </div>
           </div>
 
-          <div className="flex flex-col justify-between rounded-3xl bg-slate-950 p-8 text-white shadow-2xl">
-            <div>
-              <p className="text-sm font-medium uppercase tracking-[0.3em] text-sky-300">
-                Valencia Home Match
+          <div className="overflow-hidden rounded-[36px] border border-[#d8d2c8] bg-[#fffaf2] shadow-2xl shadow-[#b9a98d]/20">
+            <div className="border-b border-[#d8d2c8] px-8 py-8 md:px-10">
+              <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[#315b74]">
+                Formulario
               </p>
 
-              <h2 className="mt-4 text-3xl font-bold">
-                Construyendo el futuro de la búsqueda inmobiliaria
+              <h2 className="mt-5 text-4xl font-black leading-tight tracking-tight text-[#071827]">
+                Cuéntanos tu caso.
               </h2>
-              <p className="mt-6 leading-8 text-slate-300">
-                Somos un grupo de estudiantes de la Universidad Politecnica de Valencia apasionados por la tecnología, el diseño y la ciudad.
-                </p>
-              <p className="mt-6 leading-8 text-slate-300">
-                Nuestro objetivo es ayudar a las personas a encontrar no solo
-                una vivienda, sino el entorno que mejor encaja con su vida.
+
+              <p className="mt-5 max-w-2xl text-lg leading-8 text-[#5f6773]">
+                Puedes escribirnos directamente mediante el formulario integrado.
               </p>
             </div>
 
-            <div className="mt-12 space-y-6">
-              <div>
-                <p className="text-sm text-slate-400">Email</p>
-                <p className="mt-1 text-lg font-medium">
-                  info@topzero.es
-                </p>
-              </div>
-
-              <div>
-                <p className="text-sm text-slate-400">Ubicación</p>
-                <p className="mt-1 text-lg font-medium">
-                  Valencia, España
-                </p>
-              </div>
-
-              <div>
-                <p className="text-sm text-slate-400">Estado</p>
-                <div className="mt-2 inline-flex items-center gap-2 rounded-full bg-emerald-500/20 px-4 py-2 text-sm font-medium text-emerald-300">
-                  <div className="h-2 w-2 rounded-full bg-emerald-400" />
-                  Proyecto en desarrollo
-                </div>
-              </div>
-            </div>
+            <iframe
+              src="https://form.typeform.com/to/SRI1yzkB?typeform-medium=embed-snippet"
+              width="100%"
+              height="650"
+              frameBorder="0"
+              className="bg-[#fffaf2]"
+            />
           </div>
-        </div>
+        </section>
       </div>
     </main>
   );

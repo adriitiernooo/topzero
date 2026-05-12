@@ -1,11 +1,12 @@
 "use client";
+import dynamic from "next/dynamic";
 
 import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#f6f3ee]">
-      <header className="fixed left-0 top-0 z-50 w-full border-b border-white/10 bg-black/30 px-6 backdrop-blur-xl">
+    <main className="min-h-screen bg-[#f5f1ea]">
+      <header className="fixed left-0 top-0 z-50 w-full border-b border-white/10 bg-[#071827]/85 px-2 backdrop-blur-xl">
         <div className="mx-auto flex h-20 max-w-7xl items-center justify-between">
           <Link href="/" className="flex items-center">
            <img
@@ -38,11 +39,11 @@ export default function Home() {
           className="absolute inset-0 h-full w-full object-cover"
         />
 
-        <div className="absolute inset-0 bg-[#071827]/65" />
+       <div className="absolute inset-0 bg-[#071827]/60" />
 
         <div className="relative z-10 mx-auto flex h-full max-w-7xl items-center px-6">
           <div className="max-w-4xl">
-            <p className="mb-5 text-sm font-semibold uppercase tracking-[0.35em] text-[#9dd8ff]">
+            <p className="mb-5 text-[#c7dceb] font-semibold uppercase tracking-[0.35em] text-[#9dd8ff]">
               Urban Intelligence for Valencia
             </p>
 
@@ -77,7 +78,7 @@ export default function Home() {
       reverse
       image="/images/foto-centro.jpg"
       label="Inteligencia urbana"
-      title="No buscamos pisos. Buscamos encaje."
+      title="No buscamos pisos. Buscamos estilos de vida."
       text="TopZero cruza tus preferencias con perfiles urbanos reales para recomendarte zonas que tengan sentido para tu forma de vivir, moverte y disfrutar la ciudad."
     />
 
@@ -116,7 +117,7 @@ function EditorialBlock({
         <img
           src={image}
           alt={title}
-          className="h-[560px] w-full object-cover transition duration-700 hover:scale-105"
+          className="text-[#c7dceb] w-full object-cover transition duration-700 hover:scale-105"
         />
       </div>
 
