@@ -18,7 +18,7 @@ const ValenciaMap = dynamic(
 
 
 const initialAnswers: Answers = {
-  lifestyle: "",
+  lifeStyle: "",
   transport: 5,
   services: [],
   budget: "",
@@ -68,14 +68,14 @@ export default function QuizPage() {
             <div className="space-y-10 p-8 md:p-12">
               <Question title="¿Qué tipo de vida buscas?">
                 <OptionGroup
-                  value={answers.lifestyle}
+                  value={answers.lifeStyle}
                   options={[
                     ["urbana", "Urbana y activa"],
                     ["equilibrada", "Equilibrada"],
                     ["tranquila", "Tranquila y residencial"],
                   ]}
                   onChange={(value) =>
-                    setAnswers({ ...answers, lifestyle: value })
+                    setAnswers({ ...answers, lifeStyle: value })
                   }
                 />
               </Question>
