@@ -56,16 +56,10 @@ export default function ValenciaMap({ recommended }: ValenciaMapProps) {
     return String(value).padStart(2, "0");
   };
 
-  const districtStyle = (
-    feature?: Feature<Geometry, DistrictProperties>
-  ): PathOptions => {
-    const district = getDistrictCode(feature?.properties);
     const districtStyle = (
-  feature?: Feature<Geometry, DistrictProperties>
-): PathOptions => {
-  console.log("PROPERTIES MAPA:", feature?.properties);
-
-  const district = getDistrictCode(feature?.properties);
+    feature?: Feature<Geometry, DistrictProperties>
+    ): PathOptions => {
+    const district = getDistrictCode(feature?.properties);
 
   return {
     fillColor: getColor(district),
@@ -75,14 +69,6 @@ export default function ValenciaMap({ recommended }: ValenciaMapProps) {
     fillOpacity: 0.85,
   };
 };
-    return {
-      fillColor: getColor(district),
-      weight: 2,
-      opacity: 1,
-      color: "#fffaf2",
-      fillOpacity: 0.85,
-    };
-  };
 
   return (
     <div className="overflow-hidden rounded-[36px] border border-[#ddd3c4] bg-[#fffaf2] shadow-xl shadow-[#b9a98d]/20">

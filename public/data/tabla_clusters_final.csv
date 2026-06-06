@@ -1,0 +1,20 @@
+"Distrito","nombre_distrito","perfil_distrito","tipo_cluster_obj3","cluster_recomendador","renta_media_ponderada","poblacion_total_distrito","tiempo_medio_servicios","tiempo_medio_unicos"
+"04","Campanar","Riqueza media con buena accesibilidad general","Renta media y población baja","Consolidado",16907.8965517241,38925,22.0464304217512,30.4730018197388
+"13","Algirós","Riqueza media con buena accesibilidad general","Renta media y población baja","Consolidado",17426.3928571429,35510,23.2563108983385,34.4957239744673
+"14","Benimaclet","Riqueza media con buena accesibilidad general","Renta media y población baja","Consolidado",16842.2857142857,27178,17.3387941686904,31.4161799065421
+"05","La Saïdia","Baja riqueza con buena accesibilidad parcial","Renta baja y población media-alta","Dinámico",14879.6,45165,21.2229624709399,36.0468239141666
+"08","Patraix","Riqueza media con buena accesibilidad general","Renta media-baja y población alta","Dinámico",15669.35,56494,22.9809282844196,29.5136454387487
+"09","Jesús","Baja riqueza con buena accesibilidad parcial","Renta baja y población media-alta","Dinámico",13618.2368421053,51619,27.2735267860026,28.5196450394558
+"11","Poblats Marítims","Baja riqueza con buena accesibilidad parcial","Renta baja y población media-alta","Dinámico",13583.3658536585,52340,21.2260683750478,42.0592472296523
+"12","Camins al Grau","Baja riqueza con buena accesibilidad parcial","Renta media-baja y población alta","Dinámico",15369.3488372093,65070,21.7919591721736,30.3780510732032
+"07","L'Olivereta","Riqueza Baja/Media con alta accesibilidad","Renta baja y población media-alta","Intermedio",13129.6285714286,46260,23.0956189202335,28.8494595763078
+"02","L'Eixample","Perfil privilegiado","Renta alta y población media","Premium",23465.225,40330,20.6501871797256,23.1038904299942
+"03","Extramurs","Perfil privilegiado","Renta media y población baja","Premium",19507.5135135135,48244,23.3189167521695,24.7739074202664
+"06","El Pla del Real","Perfil privilegiado","Renta alta y población media","Premium",23668.1739130435,30249,17.7725204414471,26.5435788510915
+"01","Ciutat Vella","Alta riqueza con baja accesibilidad","Renta alta y población media","Premium con déficit de accesibilidad",22428.5,27661,30.815858067315,35.8683132388561
+"10","Quatre Carreres","Perfil vulnerable","Renta media-baja y población alta","Vulnerable",14625.1538461538,74112,36.3975066734582,38.5396445582362
+"15","Rascanya","Baja riqueza con accesibilidad limitada","Renta baja y población media-alta","Vulnerable",12846.9487179487,53237,24.0291740237053,41.9019525893645
+"16","Benicalap","Baja riqueza con accesibilidad limitada","Renta baja y población media-alta","Vulnerable",13357.84375,47457,26.4217882328564,37.7932312409128
+"17","Pobles del Nord","Perfil vulnerable","Renta baja y población muy baja","Vulnerable",15869.25,5320,32.375,41.25
+"18","Pobles de l'Oest","Baja riqueza con accesibilidad limitada","Renta baja y población muy baja","Vulnerable",12299.9,14481,25.8114753815344,34.4482943166908
+"19","Pobles del Sud","Perfil vulnerable","Renta baja y población muy baja","Vulnerable",13870.1333333333,21229,30.4763310212445,37
